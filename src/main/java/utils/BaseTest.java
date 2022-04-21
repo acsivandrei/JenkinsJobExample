@@ -30,7 +30,7 @@ public class BaseTest {
 	@Parameters({"browser"})
 	@BeforeClass
 	public void setUp(String browser) throws MalformedURLException {
-		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--headless");
 		option.addArguments("start-maximized");
