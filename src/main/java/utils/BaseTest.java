@@ -44,13 +44,12 @@ public class BaseTest {
 		if(browser != "" && browser != null) {
 			if(browser.equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver(option);
-			}
 		} else if(browser.equalsIgnoreCase("firefox"))  {
 			driver = new FirefoxDriver(foptions);
 		}else {
 			driver = new ChromeDriver(option);
 		}
-		
+		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().setSize(new Dimension(1920, 1080));
